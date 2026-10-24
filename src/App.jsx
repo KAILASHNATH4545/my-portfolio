@@ -17,7 +17,8 @@ function App() {
       </nav>
 
       <section className="hero">
-        <p>Hello, welcome to my portfolio!</p>
+        <h1>Hello,I am Kailashnath1</h1>
+        <p>welcome to my portfolio!</p>
         <h1>Hi, I'm Kailashnath</h1>
         <h2>Aspiring Web Developer</h2>
         <p>I am learning web development and React.</p>
