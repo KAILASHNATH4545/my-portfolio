@@ -132,7 +132,7 @@ body {
   border-radius: 0;
   object-fit: contain;
   border: none;
-  background: transparent;
+  background: #000000;
 }
 
 /* Other pages */
@@ -229,7 +229,7 @@ footer {
     object-fit: contain;
     border: none;
     border-radius: 0;
-    background: transparent;
+    background: #000000;
   }
 
   .page-section {
