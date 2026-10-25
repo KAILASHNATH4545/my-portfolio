@@ -17,6 +17,9 @@ function App() {
       </nav>
 
       <section className="hero">
+        h1{
+          color: "black"
+          }
         <h1>Hello,I am Kailashnath1</h1>
         <p>welcome to my portfolio!</p>
         <h1>Hi, I'm Kailashnath</h1>
@@ -68,8 +71,8 @@ function App() {
         <h2>Contact Me</h2>
         <p>Email: <a
           herf="Mail to:kkailash3341@gmail.com">kkailash3341@gmail.com
-          </a>
-          </p>
+        </a>
+        </p>
       </section>
 
       <footer>
