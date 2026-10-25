@@ -23,7 +23,7 @@ function App() {
 
         <section className='hero'>
           <img
-            src="/profile.jpg"
+            src="/profile.jpg.jpeg"
             alt="My Profile"
             className="profile-image"
           />
