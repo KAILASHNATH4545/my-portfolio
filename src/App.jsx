@@ -22,6 +22,11 @@ function App() {
           } */}
 
         <section className='hero'>
+          <img
+            src="/profile.jpg"
+            alt="My Profile"
+            className="profile-image"
+          />
           <h1>Hello,I am Kailashnath</h1>
         </section>
         <p>welcome to my portfolio!</p>
