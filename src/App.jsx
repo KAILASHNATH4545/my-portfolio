@@ -35,7 +35,7 @@ function Home() {
 
       <div className="photo-container">
         <img
-          src="/profile.png"
+          src="/profile-photo.png"
           alt="Kailashnath's profile"
           className="profile-image"
         />
