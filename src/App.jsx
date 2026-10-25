@@ -12,6 +12,8 @@ function App() {
           {' | '}
           <a href="#skills">Skills</a>
           {' | '}
+          <a herf="#projects">Projects</a>
+          {' | '}
           <a href="#contact">Contact</a>
         </div>
       </nav>
