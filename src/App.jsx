@@ -12,7 +12,12 @@ function App() {
           {' | '}
           <a href="#skills">Skills</a>
           {' | '}
-          <a herf="#projects">Projects</a>
+          <a herf="#projects"
+            onClick={(e)=> {
+              e.preventDefault();
+              document.getElementById('projects').scrollIntoView({ behavior: 'smooth',block: 'start', });       }} 
+          
+          >Projects</a>
           {' | '}
           <a href="#contact">Contact</a>
         </div>
