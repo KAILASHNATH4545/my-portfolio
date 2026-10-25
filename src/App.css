@@ -44,12 +44,14 @@ body {
 
 .hero h1
  {color: "black"
-  color: "black"
 }
-.hero h1 {padding: 20px 0;
-  background: #2563eb;    
-  font-size: 48px;
-  margin: 10px 0;
+.hero h1 {padding: 0;
+  background: transparent;    
+  font-size: 40px;
+  margin: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .hero h2 {

@@ -25,7 +25,7 @@ function App() {
           <h1>Hello,I am Kailashnath1</h1>
         </section>
         <p>welcome to my portfolio!</p>
-        <h1>Hi, I'm Kailashnath</h1>
+        {/* <h1>Hi, I'm Kailashnath</h1> */}
         <h2>Aspiring Web Developer</h2>
         <p>I am learning web development and React.</p>
         <a className="button" href="#about">Know More</a>
