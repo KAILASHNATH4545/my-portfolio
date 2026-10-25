@@ -22,7 +22,7 @@ function App() {
           } */}
 
         <section className='hero'>
-          <h1>Hello,I am Kailashnath1</h1>
+          <h1>Hello,I am Kailashnath</h1>
         </section>
         <p>welcome to my portfolio!</p>
         {/* <h1>Hi, I'm Kailashnath</h1> */}

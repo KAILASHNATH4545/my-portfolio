@@ -42,11 +42,13 @@ body {
   background: #eff6ff;
 }
 
-.hero h1
+/* .hero h1
  {color: "black"
-}
-.hero h1 {padding: 0;
-  background: transparent;    
+} */
+.hero h1 {
+  color: #000000;
+  padding: 0;
+  background: transparent;
   font-size: 40px;
   margin: 20px 0;
   font-family: Arial, Helvetica, sans-serif;
