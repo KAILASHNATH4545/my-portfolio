@@ -42,7 +42,12 @@ body {
   background: #eff6ff;
 }
 
-.hero h1 {
+.hero h1
+ {color: "black"
+  color: "black"
+}
+.hero h1 {padding: 20px 0;
+  background: #2563eb;    
   font-size: 48px;
   margin: 10px 0;
 }
