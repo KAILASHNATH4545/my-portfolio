@@ -125,4 +125,15 @@ footer {
       display: block;
       margin: 0 auto 25px;
     }
+
+    html{
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    #projects {
+      display: block;
+      margin-top: 200px;
+
+    }
 }
