@@ -1,99 +1,134 @@
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 
-function App() {
-  const skills = ['HTML', 'CSS', 'JavaScript', 'React']
+const skills = ['HTML', 'CSS', 'JavaScript', 'React']
 
+function Navbar() {
   return (
-    <div className="app">
-      <nav className="navbar">
-        <h2>My Portfolio</h2>
-        <div>
-          <a href="#about">About</a>
-          {' | '}
-          <a href="#skills">Skills</a>
-          {' | '}
-          <a herf="#projects"
-            onClick={(e)=> {
-              e.preventDefault();
-              document.getElementById('projects').scrollIntoView({ behavior: 'smooth',block: 'start', });       }} 
-          
-          >Projects</a>
-          {' | '}
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
+    <nav className="navbar">
+      <Link to="/" className="logo">My Portfolio</Link>
 
-      <section className="hero">
-        {/* h1{
-          color: "black"
-          } */}
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/skills">Skills</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
+      </div>
+    </nav>
+  )
+}
 
-        <section className='hero'>
-          <img
-            src="/profile.jpg.jpeg"
-            alt="My Profile"
-            className="profile-image"
-          />
-          <h1>Hello,I am Kailashnath</h1>
-        </section>
-        <p>welcome to my portfolio!</p>
-        {/* <h1>Hi, I'm Kailashnath</h1> */}
+function Home() {
+  return (
+    <main className="hero">
+      <div className="hero-content">
+        <p className="welcome">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hello, I'm <span>Kailashnath!</span></h1>
         <h2>Aspiring Web Developer</h2>
-        <p>I am learning web development and React.</p>
-        <a className="button" href="#about">Know More</a>
-      </section>
-
-      <section id="about" className="section">
-        <h2>About Me</h2>
         <p>
-          I am a student learning web development.
-          I am currently practising HTML,CSS,JavaScript, and React  to built responsive websites.
+          I'm learning web development and React.
+          I enjoy building simple and responsive websites.
         </p>
-      </section>
+        <Link to="/about" className="button">Know More</Link>
+      </div>
 
-      <section id="skills" className="section">
-        <h2>My Skills</h2>
-        <div className="skills">
-          {skills.map((skill) => (
-            <span className="skill" key={skill}>
-              {skill}
-            </span>
-          ))}
+      <div className="photo-container">
+        <img
+          src="/profile.png"
+          alt="Kailashnath's profile"
+          className="profile-image"
+        />
+      </div>
+    </main>
+  )
+}
+
+function About() {
+  return (
+    <section className="page-section">
+      <p className="welcome">GET TO KNOW ME</p>
+      <h1>About <span>Me</span></h1>
+      <p>
+        I am a student learning web development.
+        I am currently practising HTML, CSS, JavaScript,
+        and React to build responsive websites.
+      </p>
+    </section>
+  )
+}
+
+function Skills() {
+  return (
+    <section className="page-section">
+      <p className="welcome">WHAT I AM LEARNING</p>
+      <h1>My <span>Skills</span></h1>
+      <div className="skills">
+        {skills.map((skill) => (
+          <div className="skill" key={skill}>{skill}</div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+function Projects() {
+  return (
+    <section className="page-section">
+      <p className="welcome">WHAT I HAVE BUILT</p>
+      <h1>My <span>Projects</span></h1>
+
+      <div className="projects">
+        <div className="project-card">
+          <h2>Personal Portfolio</h2>
+          <p>A website to showcase my skills using React and CSS.</p>
         </div>
-      </section>
-      <section id="projects" className="section">
-        <h2>My Projects</h2>
 
-        <div className="projects">
-          <div className="project-card">
-            <h3>Personal Portfolio</h3>
-            <p>A website to showcase my skills using React and CSS.</p>
-          </div>
-
-          <div className="project-card">
-            <h3>Responsive Landing Page</h3>
-            <p>A simple webpage designed using HTML and CSS.</p>
-          </div>
-
-          <div className="project-card">
-            <h3>JavaScript Practice</h3>
-            <p>A small project to practise JavaScript fundamentals.</p>
-          </div>
+        <div className="project-card">
+          <h2>Responsive Landing Page</h2>
+          <p>A simple webpage designed using HTML and CSS.</p>
         </div>
-      </section>
 
-      <section id="contact" className="section">
-        <h2>Contact Me</h2>
-        <p>Email: <a
-          herf="Mail to:kkailash3341@gmail.com">kkailash3341@gmail.com
-        </a>
-        </p>
-      </section>
+        <div className="project-card">
+          <h2>JavaScript Practice</h2>
+          <p>A project to practise JavaScript fundamentals.</p>
+        </div>
+      </div>
+    </section>
+  )
+}
 
-      <footer>
-        <p>© 2026 My Portfolio</p>
-      </footer>
-    </div>
+function Contact() {
+  return (
+    <section className="page-section">
+      <p className="welcome">LET'S CONNECT</p>
+      <h1>Contact <span>Me</span></h1>
+      <p>Email: <a href="mailto:kkailash3341@gmail.com">
+        kkailash3341@gmail.com
+      </a></p>
+    </section>
+  )
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="app">
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+
+        <footer>
+          <p>© 2026 My Portfolio</p>
+        </footer>
+      </div>
+    </BrowserRouter>
   )
 }
 
