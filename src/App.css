@@ -271,4 +271,43 @@ footer {
   .page-section {
     padding: 55px 7%;
   }
+    .mail-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 30px;
+  
+      background: transparent;
+      color: #ffffff;
+  
+      border: 2px solid #6366f1;
+      border-radius: 10px;
+  
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+  
+      transition: all 0.3s ease;
+    }
+  
+    /* Mouse hover effect */
+    .mail-button:hover {
+      background: linear-gradient(135deg, #4f46e5, #6d28d9);
+      color: #ffffff;
+  
+      border-color: #8b5cf6;
+      box-shadow: 0 0 18px rgba(109, 40, 217, 0.45);
+  
+      transform: translateY(-3px);
+    }
+  
+    /* Keyboard focus effect */
+    .mail-button:focus-visible {
+      outline: 2px solid #c4b5fd;
+      outline-offset: 4px;
+    }
+  
+    /* Click effect */
+    .mail-button:active {
+      transform: translateY(0) scale(0.97);
+    }
 }
