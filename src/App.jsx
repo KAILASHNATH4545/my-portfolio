@@ -22,6 +22,13 @@ function Navbar() {
 function Home() {
   return (
     <main className="hero">
+      <div className="photo-container">
+        <img
+          src="/profile-photo.png"
+          alt="Kailashnath's profile"
+          className="profile-image"
+        />
+      </div>
       <div className="hero-content">
         <p className="welcome">WELCOME TO MY PORTFOLIO</p>
         <h1>Hello, I'm <span>Kailashnath!</span></h1>
@@ -33,13 +40,7 @@ function Home() {
         <Link to="/about" className="button">Know More</Link>
       </div>
 
-      <div className="photo-container">
-        <img
-          src="/profile-photo.png"
-          alt="Kailashnath's profile"
-          className="profile-image"
-        />
-      </div>
+      
     </main>
   )
 }
