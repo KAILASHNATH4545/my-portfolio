@@ -193,6 +193,70 @@ footer {
   color: #b9a9c7;
   border-top: 1px solid #382743;
 }
+.mail-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 30px;
+
+  background: transparent;
+  color: #ffffff;
+
+  border: 2px solid #6366f1;
+  border-radius: 10px;
+
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+/* Mouse hover effect */
+.mail-button:hover {
+  background: linear-gradient(135deg, #4f46e5, #6d28d9);
+  color: #ffffff;
+  border-color: #a78bfa;
+  box-shadow: 0 0 18px rgba(109, 40, 217, 0.45);
+  transform: translateY(-3px);
+}
+
+.mail-button:active {
+  transform: scale(0.97);
+}
+
+/* Keyboard focus effect */
+.mail-button:focus-visible {
+  outline: 2px solid #c4b5fd;
+  outline-offset: 4px;
+}
+
+/* Keep Mail button visible on desktop and mobile */
+.page-section a.mail-button {
+  display: inline-flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  margin-top: 20px;
+  padding: 14px 30px;
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #8b5cf6;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.page-section a.mail-button:hover {
+  background: linear-gradient(135deg, #4f46e5, #6d28d9);
+  border-color: #a78bfa;
+  box-shadow: 0 0 18px rgba(109, 40, 217, 0.45);
+  transform: translateY(-3px);
+}
 
 /* Mobile responsive */
 @media (max-width: 700px) {
