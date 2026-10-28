@@ -40,7 +40,7 @@ function Home() {
         <Link to="/about" className="button">Know More</Link>
       </div>
 
-      
+
     </main>
   )
 }
@@ -108,9 +108,14 @@ function Contact() {
         kkailash3341@gmail.com
       </a></p>
       <a
-        href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=kkailash3341%40gmail.com"
-        // target="_blank"
-        // rel="noopener noreferrer"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=kkailash3341%40gmail.com"
+        onClick={(e) => {
+          if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+            e.preventDefault();
+            window.location.href =
+              "mailto:kkailash3341@gmail.com";
+          }
+        }}
         className="mail-button"
       >
         Mail to me →
