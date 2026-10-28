@@ -108,9 +108,7 @@ function Contact() {
         kkailash3341@gmail.com
       </a></p>
       <a
-        href="https://mail.google.com/mail/?view=cm&fs=1&to=kkailash3341@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="mailto:kkailash3341@gmail.com"
         className="mail-button"
       >
         Mail to me →
