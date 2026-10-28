@@ -195,6 +195,10 @@ footer {
 }
 .mail-button {
   display: inline-block;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+  cursor: pointer;
   margin-top: 20px;
   padding: 14px 30px;
 
